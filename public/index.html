@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FrameFlow — AI Image to Video</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="logo">Frame<span>Flow</span></a>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="#" class="btn-ghost">Log in</a>
+        <a href="#" class="btn-primary">Start free</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#" class="btn-primary" style="margin-top:8px;display:block;text-align:center;">Start free</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="orb orb1"></div>
+      <div class="orb orb2"></div>
+      <div class="orb orb3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        AI-Powered · No editing skills needed
+      </div>
+      <h1 class="hero-title">
+        Turn any image<br/>into a <em>cinematic</em><br/>video — in seconds
+      </h1>
+      <p class="hero-sub">Upload. Choose a style. Download stunning video. It's that fast.</p>
+      <div class="hero-actions">
+        <a href="#" class="btn-primary btn-large">
+          Start for free
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#how" class="btn-ghost btn-large">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.3"/><path d="M6.5 5.5l4 2.5-4 2.5V5.5z" fill="currentColor"/></svg>
+          Watch demo
+        </a>
+      </div>
+      <div class="trust-bar">
+        <div class="trust-item"><span class="trust-num">120K+</span><span>creators</span></div>
+        <div class="trust-divider"></div>
+        <div class="trust-item"><span class="trust-num">4K</span><span>export quality</span></div>
+        <div class="trust-divider"></div>
+        <div class="trust-item"><span class="trust-num">30+</span><span>motion styles</span></div>
+        <div class="trust-divider"></div>
+        <div class="trust-item"><span class="trust-num">∞</span><span>exports on Pro</span></div>
+      </div>
+    </div>
+
+    <!-- Split demo -->
+    <div class="hero-demo">
+      <div class="demo-panel demo-left">
+        <div class="demo-label">Original image</div>
+        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="Mountain landscape" class="demo-img" />
+      </div>
+      <div class="demo-divider">
+        <div class="demo-divider-line"></div>
+        <div class="demo-divider-icon">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M12 6l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+      </div>
+      <div class="demo-panel demo-right">
+        <div class="demo-label">AI video output</div>
+        <div class="demo-video-wrap">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="Video output" class="demo-img demo-animated" />
+          <div class="play-overlay">
+            <div class="play-badge">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M5 3.5l10 5.5-10 5.5V3.5z" fill="currentColor"/></svg>
+              Cinematic Pan
+            </div>
+          </div>
+          <div class="scan-line"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOGOS -->
+  <section class="logos-section">
+    <p class="logos-label">Trusted by creators from</p>
+    <div class="logos-strip">
+      <div class="logo-item">YouTube</div>
+      <div class="logo-item">TikTok</div>
+      <div class="logo-item">Shopify</div>
+      <div class="logo-item">Canva</div>
+      <div class="logo-item">Figma</div>
+      <div class="logo-item">Adobe</div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-section" id="how">
+    <div class="section-header">
+      <div class="section-tag">How it works</div>
+      <h2>Three steps to cinematic video</h2>
+      <p>No timeline editor. No keyframes. Just results.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card" data-step="01">
+        <div class="step-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="4" y="4" width="20" height="20" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M14 9v10M9 14h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Upload your image</h3>
+        <p>Drag and drop or browse. Supports JPG, PNG, WEBP up to 50MB. Works with photos, illustrations, AI art, product shots — anything.</p>
+        <div class="step-formats">
+          <span>JPG</span><span>PNG</span><span>WEBP</span><span>HEIC</span>
+        </div>
+      </div>
+      <div class="step-card" data-step="02">
+        <div class="step-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M10 14l3 3 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Pick a motion style</h3>
+        <p>Choose from 30+ cinematic presets. From subtle parallax to dramatic zoom bursts. Preview in real-time before committing.</p>
+        <div class="style-pills">
+          <span class="pill active">Cinematic Pan</span>
+          <span class="pill">Ken Burns</span>
+          <span class="pill">Parallax 3D</span>
+          <span class="pill">Zoom Burst</span>
+          <span class="pill">Glitch Reveal</span>
+        </div>
+      </div>
+      <div class="step-card" data-step="03">
+        <div class="step-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 4v14M8 13l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 22h20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Export & download</h3>
+        <p>Choose resolution and format. Your video is rendered in seconds and ready to share on any platform instantly.</p>
+        <div class="export-opts">
+          <div class="export-row">
+            <span class="export-label">Resolution</span>
+            <div class="export-btns">
+              <button class="ebtn">720p</button>
+              <button class="ebtn active">1080p</button>
+              <button class="ebtn">4K</button>
+            </div>
+          </div>
+          <div class="export-row">
+            <span class="export-label">Format</span>
+            <div class="export-btns">
+              <button class="ebtn active">MP4</button>
+              <button class="ebtn">MOV</button>
+              <button class="ebtn">GIF</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES BENTO -->
+  <section class="features-section" id="features">
+    <div class="section-header">
+      <div class="section-tag">Features</div>
+      <h2>Everything you need.<br/>Nothing you don't.</h2>
+    </div>
+    <div class="bento-grid">
+      <div class="bento-card bento-large">
+        <div class="bento-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M4 16C4 9.373 9.373 4 16 4s12 5.373 12 12-5.373 12-12 12S4 22.627 4 16z" stroke="currentColor" stroke-width="1.5"/><path d="M16 10v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <h3>AI depth motion</h3>
+        <p>Our model understands the 3D structure of your image — foreground, midground, background — and animates each layer independently for realistic parallax that feels like you're inside the scene.</p>
+        <div class="depth-demo">
+          <div class="depth-layer dl1">Background</div>
+          <div class="depth-layer dl2">Midground</div>
+          <div class="depth-layer dl3">Subject</div>
+        </div>
+      </div>
+      <div class="bento-card">
+        <div class="bento-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="3" y="3" width="22" height="22" rx="4" stroke="currentColor" stroke-width="1.5"/><path d="M8 14l4 4 8-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>30+ style presets</h3>
+        <p>Cinematic pans, dramatic zooms, glitch effects, liquid morphs, and more. New styles added every month.</p>
+      </div>
+      <div class="bento-card">
+        <div class="bento-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M7 8h14M7 12h14M7 16h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="21" cy="19" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M19.5 19l1 1 2-2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Batch processing</h3>
+        <p>Convert up to 50 images at once. Perfect for product catalogues, real estate listings, or social campaigns.</p>
+      </div>
+      <div class="bento-card">
+        <div class="bento-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 4v6M4 14h6M18 14h6M14 18v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="14" cy="14" r="5" stroke="currentColor" stroke-width="1.5"/></svg>
+        </div>
+        <h3>Background removal</h3>
+        <p>AI automatically isolates your subject so it animates independently from the background — zero Photoshop needed.</p>
+      </div>
+      <div class="bento-card">
+        <div class="bento-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M5 20l4-8 5 6 3-4 4 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="22" cy="7" r="3" stroke="currentColor" stroke-width="1.5"/></svg>
+        </div>
+        <h3>AI soundtrack</h3>
+        <p>One click adds mood-matched background music generated to perfectly complement your video's visual energy.</p>
+      </div>
+      <div class="bento-card bento-wide">
+        <div class="bento-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 4l2.5 7.5H24l-6.5 4.5 2.5 7.5L14 19l-6 4.5 2.5-7.5L4 11.5h7.5L14 4z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Commercial license — all exports royalty-free</h3>
+        <p>Every video you create belongs to you. Use them in ads, social media, client projects, or sell them. No attribution required on Pro and Studio plans.</p>
+        <div class="license-badge">✓ 100% royalty-free</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery-section" id="gallery">
+    <div class="section-header">
+      <div class="section-tag">Gallery</div>
+      <h2>Made with FrameFlow</h2>
+      <p>Real outputs from real creators</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item gi1">
+        <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=400&q=80" alt="Nature scene" />
+        <div class="gallery-overlay"><span>Cinematic Pan</span></div>
+      </div>
+      <div class="gallery-item gi2">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80" alt="City lights" />
+        <div class="gallery-overlay"><span>Glitch Reveal</span></div>
+      </div>
+      <div class="gallery-item gi3">
+        <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=400&q=80" alt="Mountains" />
+        <div class="gallery-overlay"><span>Parallax 3D</span></div>
+      </div>
+      <div class="gallery-item gi4">
+        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&q=80" alt="Forest" />
+        <div class="gallery-overlay"><span>Ken Burns</span></div>
+      </div>
+      <div class="gallery-item gi5">
+        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=400&q=80" alt="Starry night" />
+        <div class="gallery-overlay"><span>Zoom Burst</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing-section" id="pricing">
+    <div class="section-header">
+      <div class="section-tag">Pricing</div>
+      <h2>Simple, honest pricing</h2>
+      <p>No hidden fees. Cancel anytime.</p>
+    </div>
+    <div class="pricing-toggle">
+      <span class="pt-opt active" id="pt-monthly">Monthly</span>
+      <div class="pt-switch" id="pt-switch">
+        <div class="pt-knob"></div>
+      </div>
+      <span class="pt-opt" id="pt-annual">Annual <span class="save-badge">Save 30%</span></span>
+    </div>
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <div class="plan-name">Free</div>
+        <div class="plan-price"><span class="price-num">$0</span><span class="price-period">/mo</span></div>
+        <p class="plan-desc">Perfect for trying FrameFlow</p>
+        <ul class="plan-features">
+          <li>✓ 5 exports per month</li>
+          <li>✓ 720p resolution</li>
+          <li>✓ 10 style presets</li>
+          <li>✓ MP4 format only</li>
+          <li class="feat-no">✗ FrameFlow watermark</li>
+          <li class="feat-no">✗ Commercial license</li>
+        </ul>
+        <a href="#" class="btn-outline">Get started free</a>
+      </div>
+      <div class="pricing-card pricing-featured">
+        <div class="featured-badge">Most Popular</div>
+        <div class="plan-name">Pro</div>
+        <div class="plan-price">
+          <span class="price-num" data-monthly="19" data-annual="13">$19</span>
+          <span class="price-period">/mo</span>
+        </div>
+        <p class="plan-desc">For serious creators and freelancers</p>
+        <ul class="plan-features">
+          <li>✓ Unlimited exports</li>
+          <li>✓ 1080p resolution</li>
+          <li>✓ All 30+ style presets</li>
+          <li>✓ MP4, MOV, GIF formats</li>
+          <li>✓ No watermark</li>
+          <li>✓ Commercial license</li>
+          <li>✓ Priority render queue</li>
+          <li>✓ AI soundtrack</li>
+        </ul>
+        <a href="#" class="btn-primary">Start Pro free</a>
+      </div>
+      <div class="pricing-card">
+        <div class="plan-name">Studio</div>
+        <div class="plan-price">
+          <span class="price-num" data-monthly="49" data-annual="34">$49</span>
+          <span class="price-period">/mo</span>
+        </div>
+        <p class="plan-desc">For agencies and power users</p>
+        <ul class="plan-features">
+          <li>✓ Everything in Pro</li>
+          <li>✓ 4K resolution</li>
+          <li>✓ API access</li>
+          <li>✓ Team seats (5 users)</li>
+          <li>✓ White-label exports</li>
+          <li>✓ Batch processing (50 imgs)</li>
+          <li>✓ Background removal</li>
+          <li>✓ Dedicated support</li>
+        </ul>
+        <a href="#" class="btn-outline">Start Studio free</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials-section">
+    <div class="section-header">
+      <div class="section-tag">Testimonials</div>
+      <h2>Creators love FrameFlow</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"I replaced my entire Adobe Express + Premiere workflow with FrameFlow. What used to take 2 hours now takes 30 seconds. Insane."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">SR</div>
+          <div>
+            <div class="testi-name">Sofia Reyes</div>
+            <div class="testi-role">Content Creator · 2.4M followers</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"We use FrameFlow to animate every product image in our Shopify store. Conversion rate went up 34% in the first month. That's real ROI."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">MK</div>
+          <div>
+            <div class="testi-name">Marcus Kim</div>
+            <div class="testi-role">E-commerce Director · Lumière Co.</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"The parallax 3D effect on travel photos is unreal. My Reels get 5x more reach now. FrameFlow is the secret weapon no one talks about."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">AJ</div>
+          <div>
+            <div class="testi-name">Aisha Johnson</div>
+            <div class="testi-role">Travel Photographer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UPLOAD CTA SECTION -->
+  <section class="upload-cta-section">
+    <div class="upload-cta-inner">
+      <h2>Ready to see what your images can do?</h2>
+      <p>No account needed. Drop an image and see the magic in 30 seconds.</p>
+      <div class="drop-zone" id="dropZone">
+        <div class="drop-icon">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="5" y="5" width="30" height="30" rx="6" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 3"/><path d="M20 13v10M14 19l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <p class="drop-text">Drop your image here</p>
+        <p class="drop-sub">or <label class="browse-link" for="fileInput">browse files</label></p>
+        <input type="file" id="fileInput" accept="image/*" hidden />
+        <p class="drop-formats">JPG · PNG · WEBP · HEIC — up to 50MB</p>
+      </div>
+      <a href="#" class="btn-primary btn-large" style="margin-top:2rem;">
+        Start free — no credit card required
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="logo">Frame<span>Flow</span></a>
+        <p>Turn images into cinematic video with AI.<br/>Built for creators, by creators.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Twitter">𝕏</a>
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="YouTube">YT</a>
+          <a href="#" aria-label="TikTok">TK</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Product</h4>
+          <a href="#">Features</a>
+          <a href="#">Pricing</a>
+          <a href="#">Gallery</a>
+          <a href="#">API docs</a>
+          <a href="#">Changelog</a>
+        </div>
+        <div class="footer-col">
+          <h4>Use cases</h4>
+          <a href="#">Social media</a>
+          <a href="#">E-commerce</a>
+          <a href="#">Real estate</a>
+          <a href="#">Photography</a>
+          <a href="#">Marketing</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+          <a href="#">Contact</a>
+          <a href="#">Privacy</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 FrameFlow. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- STICKY CTA BAR -->
+  <div class="sticky-bar" id="stickyBar">
+    <p>🎬 Start creating cinematic videos from your images — free, no credit card required.</p>
+    <a href="#" class="btn-primary">Start for free →</a>
+    <button class="sticky-close" id="stickyClose">×</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
