@@ -1,0 +1,17 @@
+# render.yaml — Render deployment config
+# Docs: https://render.com/docs/infrastructure-as-code
+
+services:
+  - type: web
+    name: frameflow
+    runtime: node
+    plan: free          # change to "starter" or higher for production
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000     # Render assigns this automatically; listed here for clarity
+    autoDeploy: true     # redeploy on every push to the connected branch
